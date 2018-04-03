@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/animal_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/animal_image_view"
+            android:layout_width="@dimen/animal_item_image_width"
+            android:layout_height="@dimen/animal_item_image_height"
+            android:layout_margin="@dimen/image_margin"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/animal_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/image_margin"
+                android:text="@string/counter"
+                android:textSize="@dimen/text_size_counter"/>
+
+            <TextView
+                android:id="@+id/animal_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/image_margin"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
